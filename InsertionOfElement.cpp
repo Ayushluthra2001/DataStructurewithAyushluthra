@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 int main()
 {
     int arr[50], i, element, pos, size;
