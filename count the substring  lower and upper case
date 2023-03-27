@@ -1,0 +1,21 @@
+class Solution
+{
+    public:
+    int countSubstring(string S)
+    {
+        // code here
+        int count=0;
+        
+        for(int i=0;i<S.length();i++){
+            int countlower=0;
+            int countupper=0;
+            for(int j=i;j<S.length();j++){
+                
+                if(islower(S[j])) countlower++;
+                else countupper++;
+                if(countlower==countupper) count++;
+            }
+        }
+        return count;
+    }
+};
